@@ -1,4 +1,4 @@
-package com.example.myshophanivia
+package com.example.myshop
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.myshophanivia.R // <--- Pastikan R milik package project kamu yang di-import
-import com.example.myshophanivia.databinding.FragmentAddressBinding
+import com.example.myshop.R // <--- Pastikan R milik package project kamu yang di-import
+import com.example.myshop.databinding.FragmentAddressBinding
 
 class AddressFragment : Fragment() {
     private var _binding: FragmentAddressBinding? = null

@@ -24,5 +24,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyShopHanivia"
+rootProject.name = "MyShop"
 include(":app")

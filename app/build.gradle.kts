@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myshophanivia"
+    namespace = "com.example.myshop"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.myshophanivia"
+        applicationId = "com.example.myshop"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

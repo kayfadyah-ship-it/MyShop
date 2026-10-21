@@ -1,4 +1,4 @@
-package com.example.myshophanivia
+package com.example.myshop
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.myshophanivia.databinding.FragmentCheckoutBinding
+import com.example.myshop.databinding.FragmentCheckoutBinding
 
 class CheckoutFragment : Fragment() {
     private var _binding: FragmentCheckoutBinding? = null
@@ -44,9 +44,18 @@ class CheckoutFragment : Fragment() {
                         }
                 }
 
-            // 4. Kembali ke HomeFragment saat tombol selesai diklik
-            btnDone.setOnClickListener {
-                findNavController().navigateUp()
+            // Mengirim data ke CartFragment saat tombol Selesai diklik
+                    btnDone.setOnClickListener {
+                        val productName = txtProductName.text.toString()
+                        val address = edtAddress.text.toString()
+
+                        val action = CheckoutFragmentDirections
+                            .actionCheckoutFragmentToCartFragment2(
+                                productName = productName,
+                                address = address
+                            )
+
+                        findNavController().navigate(action)
             }
         }
     }

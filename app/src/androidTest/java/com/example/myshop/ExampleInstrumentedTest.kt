@@ -1,4 +1,4 @@
-package com.example.myshophanivia
+package com.example.myshop
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

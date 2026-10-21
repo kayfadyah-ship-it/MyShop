@@ -1,10 +1,10 @@
-package com.example.myshophanivia
+package com.example.myshop
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.myshophanivia.databinding.ActivityMainBinding
+import com.example.myshop.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
